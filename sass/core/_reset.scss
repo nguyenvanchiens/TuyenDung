@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "FuturaRegular";
+    src: url('../../font/SFUFUTURA/SFUFuturaRegular.TTF');
+}
+@font-face {
+    font-family: Futura;
+    src: url('../../font/SFUFUTURA/SFUFuturaBook.TTF');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url();
+}
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+image{
+    display:block; 
+    max-width:100%
+}

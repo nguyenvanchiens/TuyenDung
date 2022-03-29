@@ -1,0 +1,20 @@
+.btn{
+    border: 1px solid white;
+    margin: 0 20px;
+    text-transform: uppercase;
+    &--viewmore{
+        color: #408cff;
+        background-color: #fff;
+    }
+    &--helper{
+
+        color: white;
+    }
+    &--contact{
+        width: 15rem;
+        height: 35px;       
+        background: #0066FF;
+        border-radius: 17.5px;
+        color: #FFFFFF;
+    }
+}

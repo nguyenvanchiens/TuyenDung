@@ -1,0 +1,44 @@
+@import './abstracts/_mixins.scss';
+@import './core/reset';
+@import './abstracts/variables';
+@import './vendors/bootstrap';
+@import './core/typography';
+@import './layout/header';
+@import './components/button';
+@import './pages/home';
+@import './pages/job';
+@import './pages/detail';
+
+.page-content{
+    position: relative;
+    top: $heightHeader;
+}
+.text-red{
+    color: red;
+}
+.slick-arrow{
+    border: none;
+    background-color: unset;
+}
+.prev-arrow{
+    font-size: 20px;
+}
+  
+.next-arrow{
+   font-size: 20px;
+}
+.scroll-fix{
+    position: fixed;  
+    right: 9rem;
+    width: 290px;
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+.icon-close{
+    font-size: 30px;
+}
+@keyframes example {
+    0% {top: 50px;width: 290px;}
+    100% {top: 9rem;width: 290px}
+  }
+  

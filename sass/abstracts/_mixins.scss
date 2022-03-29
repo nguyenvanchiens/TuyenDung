@@ -1,0 +1,93 @@
+@mixin respond-to($media) {
+    @if $media == max575 {
+      @media only screen and (max-width: 575px) {
+        @content;
+      }
+    } @else if $media == sm {
+      @media only screen and (max-width: 767px) {
+        @content;
+      }
+    } @else if $media == md {
+      @media only screen and (max-width: 991px) {
+        @content;
+      }
+    } @else if $media == lg {
+      @media only screen and (max-width: 1199px) {
+        @content;
+      }
+    } @else if $media == xl {
+      @media only screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+    @else if $media == xll {
+      @media only screen and (min-width: 1440px) {
+        @content;
+      }
+    }
+    @else if $media == xlll {
+      @media only screen and (min-width: 1600px) {
+        @content;
+      }
+    }
+    @else if $media == xllll {
+      @media only screen and (min-width: 1900px) {
+        @content;
+      }
+    }
+  }
+@mixin clear_both {
+    content: " ";
+    display: block;
+    clear: both;
+}
+@mixin absoluteCenter($direction:"center") {
+  position: absolute;
+  @if $direction=="center" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  @if $direction=="left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $direction=="top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $direction=="right" {
+    right: 10%;
+    transform: translateY(-50%);
+  }
+}
+@mixin flexCenter {
+  @include flexDefault();
+    justify-content: center;
+}
+@mixin flexDefault {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+@mixin flexEnd {
+  @include flexDefault();
+  justify-content: flex-end;
+  
+
+}
+@mixin fixed($top:45%,$left:50%) {
+  position: fixed;
+  top: $top;
+  left: $left;
+  transform: translate(-50%,-50%)
+}
+@mixin flexBetween{
+  @include flexDefault();
+  justify-content:space-between
+}
+@mixin flex-grow($display:flex,$flex-grow:2,$justify-content:inherit) {
+    display: $display;
+    flex-grow: $flex-grow;
+    justify-content: $justify-content;
+}

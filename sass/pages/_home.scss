@@ -1,0 +1,102 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.slide-main{
+    background: url('../../image/2448624-01\ 1\ \(1\).png') no-repeat;
+    height: 500px;
+    width: 100%;
+    background-position: 50% 12%;
+    @include respond-to(xlll){
+        background-position: 50% 20%;
+    }
+    @include respond-to(xllll){
+        background-position: 50% 30%;
+    }
+    background-size:cover;
+    &__content{
+        @include absoluteCenter;
+        text-align: center;
+        .content__title{
+            color: white;
+        }
+        .content__text{
+            font-size: 36px;
+        }
+        .content__button{
+            .btn{
+                border: 1px solid white;
+                margin: 0 20px;
+                text-transform: uppercase;
+                &--viewmore{
+                    color: #408cff;
+                    background-color: #fff;
+                }
+                &--helper{
+
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.recruitment{
+    .slick-track{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        overflow-y: auto;
+        height: 100%;
+    }
+    &__content{
+        text-align: center;
+        padding: 40px 0 30px 0;
+    }
+    &__info{
+        max-width: 1050px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        
+        .recruitment__item{
+            $paddingItem : 20px;
+            flex: 1 0;
+            padding: $paddingItem 10px;
+            margin: 0 15px;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #ebe8e8;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+            .item__icon--lg{
+                font-size: 40px;
+            }
+            .item__description span{
+                font-size: 13px;
+            }
+        }
+        .item--pt-3{
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.banner-wrap{
+    margin-top: 4rem;
+    background-image: url('../../image/2448624-01\ 1\ \(1\).png')no-repeat;
+    background-size: cover;    
+    .banner{  
+        &__content{
+            text-align: center;
+        }
+        height: 10rem;
+        line-height: 10rem;
+        position: relative;
+        @include flexCenter; 
+        &__button{
+            position: absolute;
+            right: 0;
+        }
+    }
+}
