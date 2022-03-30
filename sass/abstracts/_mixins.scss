@@ -11,17 +11,23 @@
       @media only screen and (max-width: 991px) {
         @content;
       }
-    } @else if $media == lg {
+      
+    }@else if $media == lt {
+      @media only screen and (max-width: 1024px) {
+        @content;
+      }  
+    } 
+    @else if $media == lg {
       @media only screen and (max-width: 1199px) {
         @content;
       }
     } @else if $media == xl {
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (max-width: 1200px) {
         @content;
       }
     }
     @else if $media == xll {
-      @media only screen and (min-width: 1440px) {
+      @media only screen and (max-width: 1439px) {
         @content;
       }
     }
@@ -35,6 +41,7 @@
         @content;
       }
     }
+    
   }
 @mixin clear_both {
     content: " ";

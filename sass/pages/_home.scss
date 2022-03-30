@@ -38,6 +38,26 @@
             }
         }
     }
+    @include respond-to(lt){
+        .content__text{
+            font-size: 25px;
+           
+        }
+        background-position: 50% -112% !important;
+    }
+    @include respond-to(lg){
+        .content__text{
+            font-size: 25px;
+           
+        }
+        background-position: 50% -10%;
+    }
+    @include respond-to(xll){
+        .content__text{
+            font-size: 25px;
+        }
+        background-position: 50% -10%;
+    }
 }
 .recruitment{
     .slick-track{
@@ -47,6 +67,11 @@
         align-items: stretch;
         overflow-y: auto;
         height: 100%;
+    }
+    @include respond-to(xl){
+        .slick-track{
+           
+        }
     }
     &__content{
         text-align: center;
@@ -80,16 +105,39 @@
             padding-bottom: 1rem;
         }
     }
+    @include respond-to(lt){
+        .recruitment__info{
+            max-width: 850px;
+        }
+    }
 }
 
 .banner-wrap{
     margin-top: 4rem;
-    background-image: url('../../image/2448624-01\ 1\ \(1\).png')no-repeat;
+    background: url('../../image/2448624-01\ 1\ \(1\).png')no-repeat;
     background-size: cover;    
+    @include respond-to(lt){
+        background-position: 50% 35%;
+    }
     .banner{  
         &__content{
             text-align: center;
+            @include respond-to(lt){
+                h2{
+                    font-size: 25px;
+                    margin-bottom: 0;
+                }
+            }
+            @include respond-to(lg){
+                h2{
+                    font-size: 25px;
+                    margin-bottom: 0;
+                }
+            }
+           
+            
         }
+        
         height: 10rem;
         line-height: 10rem;
         position: relative;

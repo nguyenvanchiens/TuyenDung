@@ -5,7 +5,8 @@
     height: $heightHeader;
     box-shadow: -1px 3px 9px 1px rgb(0 0 0 / 30%);
     .header{       
-        width: 1092px;;
+        width: 1092px;
+       
         margin: 0 auto;
         @include flexDefault;
         justify-content: space-between;
@@ -64,6 +65,16 @@
                 }
 
             }
+        }
+    }
+    @include respond-to(lt){
+        .header{
+            width: 900px !important;
+        }
+    }
+    @include respond-to(lg){
+        .header{
+            width: 950px;
         }
     }
 }

@@ -117,6 +117,16 @@ image {
   top: 50%;
   transform: translate(10%, -50%);
 }
+@media only screen and (max-width: 1024px) {
+  .header-wrap .header {
+    width: 900px !important;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .header-wrap .header {
+    width: 950px;
+  }
+}
 
 .btn {
   border: 1px solid white;
@@ -136,6 +146,12 @@ image {
   background: #0066FF;
   border-radius: 17.5px;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 1024px) {
+  .btn--viewmore, .btn--helper {
+    padding: 4px;
+    font-size: 15px;
+  }
 }
 
 .slide-main {
@@ -180,6 +196,30 @@ image {
 .slide-main__content .content__button .btn--helper {
   color: white;
 }
+@media only screen and (max-width: 1024px) {
+  .slide-main {
+    background-position: 50% -112% !important;
+  }
+  .slide-main .content__text {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .slide-main {
+    background-position: 50% -10%;
+  }
+  .slide-main .content__text {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .slide-main {
+    background-position: 50% -10%;
+  }
+  .slide-main .content__text {
+    font-size: 25px;
+  }
+}
 
 .recruitment .slick-track {
   display: -webkit-flex;
@@ -219,11 +259,21 @@ image {
 .recruitment__info .item--pt-3 {
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 1024px) {
+  .recruitment .recruitment__info {
+    max-width: 850px;
+  }
+}
 
 .banner-wrap {
   margin-top: 4rem;
-  background-image: url("../../image/2448624-01 1 (1).png") no-repeat;
+  background: url("../../image/2448624-01 1 (1).png") no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-wrap {
+    background-position: 50% 35%;
+  }
 }
 .banner-wrap .banner {
   height: 10rem;
@@ -236,6 +286,18 @@ image {
 }
 .banner-wrap .banner__content {
   text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-wrap .banner__content h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .banner-wrap .banner__content h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
 }
 .banner-wrap .banner__button {
   position: absolute;
@@ -277,6 +339,11 @@ image {
 }
 .job-content .job-detail__left {
   padding-left: 160px;
+}
+@media only screen and (max-width: 1024px) {
+  .job-content .job-detail__left {
+    padding-left: 130px;
+  }
 }
 .job-content .job-detail__left .item {
   margin-left: 1.2rem;

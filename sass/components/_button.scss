@@ -6,6 +6,7 @@
         color: #408cff;
         background-color: #fff;
     }
+    
     &--helper{
 
         color: white;
@@ -16,5 +17,12 @@
         background: #0066FF;
         border-radius: 17.5px;
         color: #FFFFFF;
+    }
+    @include respond-to(lt){
+        &--viewmore,
+        &--helper{
+            padding: 4px;
+            font-size: 15px;
+        }
     }
 }

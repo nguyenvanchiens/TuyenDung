@@ -4,6 +4,15 @@ $('.recruitment__info--slide').slick({
     prevArrow: '',
     nextArrow: '',
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          autoplay:true,
+          autoplaySpeed: 2000,
+        }
+    },
         {
             breakpoint: 992,
             settings: {
