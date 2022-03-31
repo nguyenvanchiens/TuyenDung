@@ -3,15 +3,9 @@
 
 .slide-main{
     background: url('../../image/2448624-01\ 1\ \(1\).png') no-repeat;
-    height: 500px;
+    height: 35vw;//chiếm 35% tính từ thằng root html hoặc body
     width: 100%;
     background-position: 50% 12%;
-    @include respond-to(xlll){
-        background-position: 50% 20%;
-    }
-    @include respond-to(xllll){
-        background-position: 50% 30%;
-    }
     background-size:cover;
     &__content{
         @include absoluteCenter;
@@ -40,23 +34,20 @@
     }
     @include respond-to(lt){
         .content__text{
-            font-size: 25px;
+            font-size: 30px;
            
         }
-        background-position: 50% -112% !important;
     }
     @include respond-to(lg){
         .content__text{
-            font-size: 25px;
+            font-size: 22px;
            
         }
-        background-position: 50% -10%;
     }
     @include respond-to(xll){
         .content__text{
             font-size: 25px;
         }
-        background-position: 50% -10%;
     }
 }
 .recruitment{
@@ -67,6 +58,12 @@
         align-items: stretch;
         overflow-y: auto;
         height: 100%;
+    }
+    .slick-list{
+        width: 100%;
+    }
+    .slick-track{
+        width: 100%;
     }
     @include respond-to(xl){
         .slick-track{
@@ -114,11 +111,9 @@
 
 .banner-wrap{
     margin-top: 4rem;
-    background: url('../../image/2448624-01\ 1\ \(1\).png')no-repeat;
+    background: url('../../image/banner.png')no-repeat;
     background-size: cover;    
-    @include respond-to(lt){
-        background-position: 50% 35%;
-    }
+    background-position: 50% -10%;
     .banner{  
         &__content{
             text-align: center;
